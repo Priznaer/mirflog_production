@@ -9,7 +9,6 @@ import {
 import "./about.css";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import cargo_clearing from "../../assets/images/cargo_clearing_1.jpg"
 import compass_img from "../../assets/images/scaled/compass-1 - 750x500.webp";
 import about_us from "../../assets/images/scaled/about-us-2.webp";
 import { StatisticsCard } from "../../components/cards/cards";
