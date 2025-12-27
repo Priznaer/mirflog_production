@@ -1,0 +1,95 @@
+#footer {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px 100px;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    padding: 20px 10px 30px;
+}
+
+#footer .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30ch;
+}
+
+#footer .company-text {
+    text-align: center;
+}
+
+#footer .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+#footer .sitemap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+#footer .sitemap-link {
+    color: unset;
+    text-decoration: none;
+}
+
+#footer .sitemap-link:hover {
+    color: white;
+}
+
+#footer .get-in-touch {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+#footer .phone-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#footer .email-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#footer .socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+    transition: scale 400ms ease-in-out;
+}
+
+#footer .socials-container a {
+    padding: 5px;
+}
+
+#footer .socials-container a:hover {
+    scale: 1.2;
+}
+
+#footer .icon {
+    font-size: 30px;
+}
+
+.fa-x-twitter {
+    color: black;
+}
+
+.fa-square-instagram {
+    color: #d62976;
+}
+
+.fa-tiktok {
+    color: black;
+}

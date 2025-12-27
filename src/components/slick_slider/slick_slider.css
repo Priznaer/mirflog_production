@@ -1,0 +1,13 @@
+#hero-section .slick-slide, #hero-section .slick-slide:nth-child(1) {
+    height: 100vh;
+}
+
+.slick-slider {
+    height: 100%;
+    width: 100%;
+}
+
+.slide-container {
+    height: 100%;
+}
+

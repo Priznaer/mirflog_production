@@ -1,0 +1,134 @@
+/* StatisticsCard */
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #fdfdfd;
+    padding: 10px;
+    text-align: center;
+    max-width: 350px;
+    height: 150px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.stat-card .stat-heading {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: var(--fs-lg);
+}
+
+.stat-card .stat-body {
+    color: var(--primary-color);
+    font-size: var(--fs-md);
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    max-width: max-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.left-quote-container {
+    font-size: 35px;
+    align-self: flex-start;
+    color: var(--primary-color);
+}
+
+.right-quote-container {
+    font-size: 35px;
+    align-self: flex-end;
+    color: var(--secondary-color);
+}
+
+.message-x-testifier {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 45px;
+}
+
+.message-container .message {
+    max-width: 70ch;
+    text-align: center;
+}
+
+.testifier-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-logo {
+    width: 100px;
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.testifier-info {
+    text-align: center;
+}
+
+.testifier-name {
+    font-weight: bold;
+    text-align: left;
+}
+
+.tac {
+    text-align: center;
+}
+
+/* Services Card */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: min(calc(100vw - 15px), 450px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.service-img {
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+}
+
+.service-text {
+    padding: 0 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-heading {
+    text-align: center;
+    font-size: x-large;
+    margin-top: auto;
+}
+
+.service-body {
+    color: auto;
+    margin-top: auto;
+    text-align: center;
+}
+
+.service-card .service-cta {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.service-card .cta-container {
+    margin-bottom: 10px;
+}

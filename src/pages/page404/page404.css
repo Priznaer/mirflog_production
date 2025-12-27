@@ -1,0 +1,35 @@
+#page-404 .main-container {
+    margin: 0;
+}
+    
+#page-404 .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-4);
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+#page-404 h1 {
+    font-size: 200px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+#page-404 .mirf-logo h2 {
+    position: absolute;
+    bottom: 0;
+}
+
+#page-404 .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#page-404 .cta {
+    min-width: 150px;
+}

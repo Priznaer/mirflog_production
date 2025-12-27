@@ -1,0 +1,48 @@
+#main-header {
+    position: fixed;
+    top: 0;
+    height: var(--header-height);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: var(--primary-color);
+    color: white;
+    z-index: 1000;
+}
+
+#main-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color2);
+}
+
+#main-header .logo .logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#main-header .logo .logo-text {
+    text-align: center;
+    text-wrap: wrap;
+}
+
+#menu-icon {
+    display: none;
+    width: 25px;
+    height: 25px;
+    transition: all 2s;
+}
+
+@media screen and (max-width: 830px) {
+    #menu-icon {
+        display: inline-block;
+    }
+}
