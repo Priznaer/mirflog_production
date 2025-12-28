@@ -43,7 +43,6 @@ export function TestimonialCard({testimonial}) {
     )
 }
 
-
 export function ServicesCard({service_data}) {
     const card_id = service_data.url.split("/")[2];
     

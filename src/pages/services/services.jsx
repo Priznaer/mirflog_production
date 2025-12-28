@@ -32,7 +32,6 @@ export default function ServicesPage({ navData=[], services=[], phone_numbers=[]
         "name": "Ghana"
       }
     }
-    console.log(schema);
     return schema;
   }
   

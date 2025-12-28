@@ -37,7 +37,6 @@ export function Modal({ children, close_destination="/" }) {
     )
 }
 
-
 export function NotificationModal({
   timeout = 5000, children, okHandler, onClose
 }) {

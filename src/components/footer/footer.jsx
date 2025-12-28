@@ -49,14 +49,6 @@ export default function Footer({nav_data=[], emails=[], phone_numbers=[], social
           ))}
         </div>
       </div>
-      {/* <div className="working-hours">
-        <h2 className="footer-heading">Office Hours</h2>
-        <div className="working-hours-entry">
-          <span>Monday - Friday</span>
-          <FontAwesomeIcon icon={faArrowRight} />
-          <span>7:00am to 5:00pm</span>
-        </div>
-      </div> */}
     </div>
   )
 }

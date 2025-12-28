@@ -204,9 +204,6 @@ export default function HomePage(
                         <section className="map-section">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2220202329577!2d-0.06821452495488307!3d5.681016194300582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf81aa35d081bb%3A0x7c91f876c518a8c0!2sMirf%20Logistics!5e0!3m2!1sen!2sgh!4v1765979204968!5m2!1sen!2sgh" width="600" height="540" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='Mirf Logistics Location On Map' ></iframe>
                         </section>
-                        {/* <div className="cta-container">
-                            <a href="/contact" className="cta hyperlink">Get In Touch</a>
-                        </div> */}
                     </main>
                 </div>
                 <Footer nav_data={navData} phone_numbers={phone_numbers} emails={emails} socials={socials} />

@@ -16,8 +16,7 @@ import { MiniHero } from '../../components/hero/hero';
 
 
 export default function ContactPage({ navData, phone_numbers=[], emails=[], socials=[], working_hours=[] }) {
-    // const today = new Date().getDay() + 6;
-    const today = 0
+    const today = new Date().getDay() + 6;
     const [notifySubmitSuccess, setNotifySubmitSuccess] = useState(false);
     const payload_ref = useRef({});
     const form_ref = useRef("");
@@ -400,7 +399,6 @@ export default function ContactPage({ navData, phone_numbers=[], emails=[], soci
                                           <FontAwesomeIcon icon={social.icon} className='contact-icon' />
                                           <div className="info-container">
                                               <p className="info-heading"> {social.heading} </p>
-                                              {/* <p className="socials-item">{social.handle}</p> */}
                                           </div>
                                       </Link>
                                   ))}

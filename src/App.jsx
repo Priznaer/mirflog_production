@@ -28,19 +28,24 @@ export default function App() {
     let section = "";
     let paths = [];
     switch (true) {
-      case (location.hash):
+      case (Boolean(location.hash)): {
         section = document.querySelector(location.hash);
         break;
-      case (!location.hash): {
+      }
+      case (Boolean(!location.hash)): {
         paths = location.pathname.split("/");
         if (paths.length > 2) {
           section = document.getElementById(paths[paths.length - 1]);
         }
+        break;
       }
     }
 
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const rect = section.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const targetPosition = rect.top + scrollTop - 75; // 75px offset from top
+      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     } else {
       if (location.pathname === "/" || (!prevLocationRef.current.pathname.includes(currentLocationRef.current.pathname))) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
