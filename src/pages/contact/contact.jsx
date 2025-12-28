@@ -20,7 +20,7 @@ export default function ContactPage({ navData, phone_numbers=[], emails=[], soci
     const payload_ref = useRef({});
     const form_ref = useRef("");
     const final_view = 3;
-    const [currentView, setCurrentView] = useState(2);
+    const [currentView, setCurrentView] = useState(1);
     const view_headings = {
         1: "Personal Information",
         2: "Service Information",
