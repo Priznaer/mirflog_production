@@ -16,6 +16,8 @@ import { MiniHero } from '../../components/hero/hero';
 
 
 export default function ContactPage({ navData, phone_numbers=[], emails=[], socials=[], working_hours=[] }) {
+    // const today = new Date().getDay() + 6;
+    const today = 0
     const [notifySubmitSuccess, setNotifySubmitSuccess] = useState(false);
     const payload_ref = useRef({});
     const form_ref = useRef("");
@@ -410,7 +412,7 @@ export default function ContactPage({ navData, phone_numbers=[], emails=[], soci
                             <div className="office-hours-container">
                                 {working_hours.map((data, idx) => {
                                     return (
-                                        <div key={idx} className="row">
+                                        <div key={idx} className={`row${!data.opening ? " closed" : ""}${today === idx ? " today" : ""}`}>
                                             <p className="day"> {data.day} </p>
                                             {
                                                 data.opening ? 
