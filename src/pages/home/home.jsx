@@ -122,6 +122,7 @@ export default function HomePage(
                             centeredSlides={true}
                             navigation
                             loop
+                            speed={1500}
                             autoplay={{
                                 delay: 3500,
                                 disableOnInteraction: false,
@@ -212,6 +213,7 @@ export default function HomePage(
                                 centeredSlides={true}
                                 navigation
                                 loop
+                                speed={1500}
                                 autoplay={{
                                     delay: 3500,
                                     disableOnInteraction: false,
