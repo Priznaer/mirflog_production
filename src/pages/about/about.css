@@ -67,10 +67,6 @@
     width: 100%;
 }
 
-.our-goal {
-    margin-bottom: 15px;
-}
-
 .core-values {
     margin: 30px 0;
 }
@@ -141,22 +137,52 @@
         flex-direction: column;
     }
 
+    #about-page .story-to-goals .our-compass .mission-x-vision {
+        flex-basis: unset;
+    }
+
     .mission-x-vision .introduction-container {
         flex-direction: row;
         gap: 20px;
         flex-grow: unset;
     }
     
-    .mission-x-vision .intro-hype {
+    #about-page .story-to-goals .intro-hype {
         align-self: center;
+        min-width: 200px;
     }
     
     .mission-x-vision .separator {
         display: block;
+        min-width: 3px;
+        max-width: 3px;
+        align-self: stretch;
+        height: unset;
     }
 
-    .mission-x-vision .intro-paragraph {
-        
+    #about-page .story-to-goals .our-compass .mission-x-vision .intro-paragraph {
+        padding: 10px 0;
     }
 }
 
+@media screen and (max-width: 550px) {
+    .mission-x-vision .introduction-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    #about-page .story-to-goals .intro-hype {
+        min-width: unset;
+    }
+    
+    .mission-x-vision .separator {
+        align-self: center;
+        min-width: 40%;
+        max-width: 40%;
+        height: 3px;
+    }
+
+    #about-page .story-to-goals .our-compass .mission-x-vision .intro-paragraph {
+        padding: 0;
+    }
+}

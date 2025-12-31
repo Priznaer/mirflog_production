@@ -118,6 +118,7 @@
 
 .office-hours-container .row.today {
     background-color: white;
+    border: 3px solid var(--primary-color);
 }
 
 .office-hours-container .row .day {
