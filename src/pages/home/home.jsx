@@ -126,7 +126,7 @@ export default function HomePage(
                             autoplay={{
                                 delay: 3500,
                                 disableOnInteraction: false,
-                                pauseOnMouseEnter: true,
+                                pauseOnMouseEnter: false,
                             }}
                             scrollbar={{ draggable: true }}
                         >
@@ -152,7 +152,7 @@ export default function HomePage(
                             <h2 className="section-heading">
                                 We are trusted because we are
                             </h2>
-                            <Marquee speed={50} pauseOnHover>
+                            <Marquee speed={50}>
                                 <p style={{padding: "5px 50px"}}> Reliable </p>
                                 <p style={{padding: "5px 50px"}}> Trustworthy </p>
                                 <p style={{padding: "5px 50px"}}> Transparent </p>
@@ -164,7 +164,7 @@ export default function HomePage(
                             <div className="md-img-x-text">
                                 <img src={cargo_on_truck_2000_850} alt="xxx" width="500" height="500" className="md-img" />
                                 <div className="md-text-container">
-                                    <h2 className="section-heading"> Words From Our MD</h2>
+                                    <h2 className="section-heading"> A Word From Our MD</h2>
                                     <p className="md-text"> 
                                         At Mirf logistics, we believe that a successful supply chain is the backbone of every great business. 
                                         <em> Mirf Logistics is not just a business</em> - we are a reliable, and innovative logistics company that makes connecting your products with the world effortless.
@@ -198,7 +198,7 @@ export default function HomePage(
                         </section>
                         <section id="clients">
                             <h2 className="section-heading">Our Clients</h2>
-                            <Marquee speed={50} pauseOnHover>
+                            <Marquee speed={50} pauseOnHover={false}>
                                 {[...clients, ...clients, ...clients].map((client_data, idx) => (
                                     <img key={idx} src={client_data.img_src} alt={client_data.alt_text} className="client-img" />
                                 ))}
@@ -217,7 +217,7 @@ export default function HomePage(
                                 autoplay={{
                                     delay: 3500,
                                     disableOnInteraction: false,
-                                    pauseOnMouseEnter: true,
+                                    pauseOnMouseEnter: false,
                                 }}
                                 scrollbar={{ draggable: true }}
                             >

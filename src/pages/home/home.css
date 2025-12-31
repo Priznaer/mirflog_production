@@ -228,7 +228,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 775px) {
     .md-img-x-text {
         flex-wrap: wrap;
         gap: 0;

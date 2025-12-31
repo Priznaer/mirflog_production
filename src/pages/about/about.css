@@ -117,7 +117,7 @@
     }
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (min-width: 1375px) {
     .mission-x-vision .introduction-container {
         flex-direction: column;
         gap: 5px;
@@ -165,7 +165,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 665px) {
     .mission-x-vision .introduction-container {
         flex-direction: column;
         gap: 5px;
