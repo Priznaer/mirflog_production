@@ -147,7 +147,7 @@
 
 .quote-form {
     min-width: 900px;
-    max-width: calc(100vw - 20px);
+    max-width: 1350px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -429,13 +429,13 @@ button:focus {
 
 @media screen and (min-width: 870px) and (max-width: 1120px) {
     .label_x_input-x-error {
-        min-width: 315px;
+        min-width: 320px;
     }
 }
 
 @media screen and (min-width: 1120px) and (max-width: 1260px) {
     .label_x_input-x-error {
-        min-width: 360px;
+        min-width: 380px;
     }
     
     .dimensions-container {

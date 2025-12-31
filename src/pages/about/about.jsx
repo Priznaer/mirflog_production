@@ -29,13 +29,14 @@ export default function AboutPage({ navData=[], milestones=[], phone_numbers=[],
                 <div className="main-container">
                     <MiniHero img_SRC={about_us} alt="About Us" >
                         <h1>About Us</h1>
-                        <p>Get to know us</p>
+                        <p>Dedicated to delivering excellence and building lasting partnerships</p>
                     </MiniHero>
                     <main className="main-content">
                         <div className="story-to-goals">
-                            <div className="our-story">
-                                <h2 className="heading">Our Story</h2>
-                                <div className="body">
+                            <div className="our-story introduction-container">
+                                <h2 className="heading intro-hype">Our Story</h2>
+                                <div className="separator"></div>
+                                <div className="body intro-paragraph">
                                     <p>
                                         <span>
                                             Our journey began with a simple idea - to make logistics smarter, faster, and more dependable.
@@ -50,25 +51,28 @@ export default function AboutPage({ navData=[], milestones=[], phone_numbers=[],
                             <div className="our-compass">
                                 <img src={compass_img} alt="Image Of A Compass" className="guidance-img" />
                                 <div className="mission-x-vision">
-                                    <div className="our-vision">
-                                        <h2 className="heading">Our Vision</h2>
-                                        <div className="body">
+                                    <div className="our-vision introduction-container">
+                                        <h2 className="heading intro-hype">Our Vision</h2>
+                                        <div className="separator"></div>
+                                        <div className="body intro-paragraph">
                                             <p>
                                                 To be the leading logistics provider, delivering exceptional services and value to our clients worldwide and connecting the work, one shipment at a time.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="our-mission">
-                                        <h2 className="heading">Our Mission</h2>
-                                        <div className="body">
+                                    <div className="our-mission introduction-container">
+                                        <h2 className="heading intro-hype">Our Mission</h2>
+                                        <div className="separator"></div>
+                                        <div className="body intro-paragraph">
                                             <p>
                                                 To deliver personalized, efficient, and reliable logistics solution that meet the evolving needs of our clients, while building long-term relationships and driving business growth.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="our-goal">
-                                        <h2 className="heading">Our Goal</h2>
-                                        <div className="body">
+                                    <div className="our-goal introduction-container">
+                                        <h2 className="heading intro-hype">Our Goal</h2>
+                                        <div className="separator"></div>
+                                        <div className="body intro-paragraph">
                                             <p>
                                                 Our goal is to become a leading force in logistics by delivering exceptional, reliable and efficient services to our valued clients. 
                                                 With a deep commitment to customer satisfaction, we tailor each solution to meet the specific needs and challenges of our clients, fostering long-term partnerships built on trust and performance.

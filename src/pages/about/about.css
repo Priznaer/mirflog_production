@@ -14,9 +14,13 @@
     gap: 10px;
 }
 
-#about-page .story-to-goals .our-story {
-    margin-bottom: 30px;
-    text-align: center;
+#about-page .story-to-goals .intro-hype {
+    min-width: max-content;
+}
+
+#about-page .story-to-goals .intro-paragraph {
+    padding: 15px 0;
+    max-width: 110ch;
 }
 
 #about-page .story-to-goals .our-story h2 {
@@ -41,12 +45,21 @@
 }
 
 #about-page .story-to-goals .our-compass .mission-x-vision {
-    flex-basis: 400px;
+    flex-basis: 500px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* border: 2px solid green; */
+}
+
+#about-page .story-to-goals .our-compass .mission-x-vision .introduction-container,
+#about-page .story-to-goals .our-compass .mission-x-vision .intro-hype, 
+#about-page .story-to-goals .our-compass .mission-x-vision .intro-paragraph {
+    padding: 0;
+}
+
+#about-page .story-to-goals .our-compass .mission-x-vision h2 {
+    text-align: center;
 }
 
 .our-vision, .our-mission, .our-goal {
@@ -77,13 +90,6 @@
     gap: 30px;
 }
 
-@media screen and (max-width: 400px) {
-    .core-values-list {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .core-values-list .core-value-item {
     display: flex;
     flex-direction: column;
@@ -108,9 +114,49 @@
     background-color: aliceblue;
 }
 
-@media screen and (min-width: 700px) and (max-width: 1210px) {
-    #about-page .story-to-goals .our-compass .mission-x-vision {
-        text-align: center;
-        max-width: 750px;
+@media screen and (max-width: 400px) {
+    .core-values-list {
+        display: flex;
+        flex-direction: column;
     }
 }
+
+@media screen and (max-width: 2000px) {
+    .mission-x-vision .introduction-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .mission-x-vision .intro-hype {
+        align-self: flex-start;
+    }
+    
+    .mission-x-vision .separator {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    #about-page .story-to-goals .our-compass {
+        flex-direction: column;
+    }
+
+    .mission-x-vision .introduction-container {
+        flex-direction: row;
+        gap: 20px;
+        flex-grow: unset;
+    }
+    
+    .mission-x-vision .intro-hype {
+        align-self: center;
+    }
+    
+    .mission-x-vision .separator {
+        display: block;
+    }
+
+    .mission-x-vision .intro-paragraph {
+        
+    }
+}
+

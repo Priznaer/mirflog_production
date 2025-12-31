@@ -1,5 +1,46 @@
+/* Hero Section */
 #home-page #hero-section {
     height: min(calc(100vh - var(--header-height)), 850px);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#home-page #hero-section .swiper, 
+#home-page #hero-section .swiper-wrapper, 
+#home-page #hero-section .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+#home-page #hero-section .hero-slide {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#home-page #hero-section .hero-slide .hero_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#home-page #hero-section .hero-slide .hero-text {
+    padding: 10px;
+}
+
+#home-page #hero-section .hero-slide .slide-heading {
+    text-align: center;
+    color: white;
+    font-size: var(--fs-xxl);
+    font-weight: bolder;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#home-page #hero-section .hero-slide .slide-sub-heading {
+    text-align: center;
+    color: white;
+    font-size: var(--fs-lg);
+    line-height: 1;
+    max-width: max(90%, 1000px);
 }
 
 /* Message 4rm MD */
@@ -22,6 +63,19 @@
     max-width: 50%;
 }
 
+.md-text-container .section-heading {
+    padding: 0;
+    margin-top: 15px;
+}
+
+.md-text-container .md-text {
+    line-height: 1.5;
+}
+
+.md-text-container .md-text em {
+    font-weight: 500;
+}
+
 .md-text-container h2 {
     text-align: unset;
 }
@@ -39,6 +93,10 @@
     gap: 20px;
     padding: 10px;
     background-color: var(--color-4);
+}
+
+#home-page .service-heading {
+    text-align: left;
 }
 
 .ic-x-slc {
@@ -70,6 +128,7 @@
     max-width: 500px;
 }
 
+/* Testimonials Section */
 #testimonials-section {
     margin: 0 auto;
 }
@@ -77,6 +136,16 @@
 #testimonials-section h3 {
     text-align: center;
     padding: 15px 0;
+}
+
+#testimonials-section .swiper-wrapper {
+  align-items: center;
+}
+
+#testimonials-section .swiper-slide {
+  padding: 5px 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .swiper-button-prev {
@@ -87,6 +156,7 @@
     color: var(--secondary-color);
 }
 
+/* Trust Section */
 .trust-reasons {
     display: flex;
     justify-content: center;
@@ -98,6 +168,7 @@
     padding: 10px 0;
 }
 
+/* Clients Section */
 #clients {
     width: 100%;
     background-color: var(--color-4);
@@ -115,6 +186,7 @@
     border-radius: 10px;
 }
 
+/* Map Section */
 .map-section {
     padding: 5px;
 }
@@ -149,14 +221,27 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    #hero-section .swiper-button-prev, 
+    #hero-section .swiper-button-next {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .md-img-x-text {
         flex-wrap: wrap;
+        gap: 0;
     }
     
     .md-text-container {
         max-width: 90%;
         text-align: center;
+        gap: 10px;
+    }
+
+    .md-text-container .md-text {
+        line-height: 1.3;
     }
 }
 

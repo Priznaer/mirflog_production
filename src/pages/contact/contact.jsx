@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-    faPhone, faEnvelope, faTrashCan,
-    faCirclePlus
+    faPhone, faEnvelope, faTrashCan, faCirclePlus
 } from '@fortawesome/free-solid-svg-icons';
 
 import "./contact.css";
@@ -16,7 +15,7 @@ import { MiniHero } from '../../components/hero/hero';
 
 
 export default function ContactPage({ navData, phone_numbers=[], emails=[], socials=[], working_hours=[] }) {
-    const today = new Date().getDay() + 6;
+    const today = (new Date().getDay() + 6) % 7;
     const [notifySubmitSuccess, setNotifySubmitSuccess] = useState(false);
     const payload_ref = useRef({});
     const form_ref = useRef("");
@@ -360,13 +359,13 @@ export default function ContactPage({ navData, phone_numbers=[], emails=[], soci
             <Header navData={navData} />
             <div className="main-container">
               <MiniHero img_SRC={customer_care} alt="Customer Support Agent" >
-                    <h1>In-Person Or Virtual</h1>
-                    <p>You Can Still Reach Us</p>
+                    <h1> Get In Touch </h1>
+                    <p>We're available to answer your questions and support your business growth</p>
                 </MiniHero>
                 <main className="main-content">
                     <div className="contact-group">
                         <div className="contact-channels">
-                            <h2 className="section-heading">Something Something Here ....</h2>
+                            <h2 className="section-heading"> Contact Us </h2>
                             <div className="phones-x-emails-container">
                                 <div className="phone-numbers">
                                     <div className="icon-x-info">
@@ -468,7 +467,7 @@ export default function ContactPage({ navData, phone_numbers=[], emails=[], soci
                                             </div>
                                         </div>
                                         <div className="choice-medium">
-                                            <h3>Preferred Method Of Contact</h3>
+                                            <p>Preferred Method Of Contact</p>
                                             <div className="input-x-error">
                                                 <div className="form-row radio-container">
                                                     <div className="radio-x-label">

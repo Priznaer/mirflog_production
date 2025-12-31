@@ -1,17 +1,3 @@
-/* Hero */
-#hero-section {
-    position: relative;
-    width: 100%;
-    background-position: center;
-    background-size: contain;
-}
-
-#hero-section img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
 /* Mini Hero */
 .mini-hero {
     width: 100%;
@@ -20,7 +6,7 @@
 }
 
 .mini-hero h1 {
-  color: red;
+  color: white;
 }
 
 .mini-hero p {

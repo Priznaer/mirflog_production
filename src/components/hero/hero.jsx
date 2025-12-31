@@ -1,17 +1,4 @@
 import "./hero.css"
-import { MediaSlider } from "../media_slider/media_slider";
-
-
-export default function Hero({ slides_data, settings={}, children, classes }) {
-  return (
-    <section id="hero-section" className={classes} >
-      {slides_data && 
-        <MediaSlider slides_data={slides_data} settings={settings} />
-      }
-      { children }
-    </section>
-  )
-}
 
 
 export function MiniHero({img_SRC, alt, children}) {
