@@ -56,7 +56,7 @@ export default function AboutPage({ navData=[], milestones=[], phone_numbers=[],
                                         <div className="separator"></div>
                                         <div className="body intro-paragraph">
                                             <p>
-                                                To be the leading logistics provider, delivering exceptional services and value to our clients worldwide and connecting the work, one shipment at a time.
+                                                To be the leading logistics provider, delivering exceptional services and value to our clients worldwide and connecting the world, one shipment at a time.
                                             </p>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@ export default function AboutPage({ navData=[], milestones=[], phone_numbers=[],
                                     <h3 className="heading">Innovation</h3>
                                     <div className="body">
                                         <p>
-                                            We enhance change and technology to stay ahead of the curve. We are constantly exploring new ways to deliver smarter logistics.
+                                            We embrace change and technology to stay ahead of the curve. We are constantly exploring new ways to deliver smarter logistics.
                                         </p>
                                     </div>
                                 </div>

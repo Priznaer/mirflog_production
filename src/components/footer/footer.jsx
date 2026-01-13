@@ -5,7 +5,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import "./footer.css"
-import mirf_logo from "../../assets/images/scaled/mirf_logo-no_bg-compact.webp";
+// import mirf_logo from "../../assets/images/scaled/mirf_logo - cropped - 500x304.webp";
+import mirf_logo from "/mirf_logo - cropped_text - 500x428.webp";
 
 
 export default function Footer({nav_data=[], emails=[], phone_numbers=[], socials=[]}) {

@@ -46,7 +46,7 @@ export default function ServicesPage({ navData=[], services=[], phone_numbers=[]
       />}
       <Header navData={navData} />
       <div className="main-container">
-          {!target_service && <MiniHero img_SRC={service_hero_img} alt="xxx" >
+          {!target_service && <MiniHero img_SRC={service_hero_img} alt="Service Hero Image" >
             { !target_service ? <h1>Our Services</h1> : <h2>Our Services</h2> }
             <p>We Provide Comprehensive Logistics Solutions</p>
           </MiniHero>}
@@ -101,7 +101,7 @@ export default function ServicesPage({ navData=[], services=[], phone_numbers=[]
           {target_service === "distribution-and-supply-chain-management" && <Modal close_destination="/services">
             <HelmetSEO
               title={`${target_service_data.heading} | Mirf Logistics`}
-              description="xxx"
+              description={`${target_service.body}`}
               canonical={`https://mirflogistics.com/services/${target_service}`}
               schema={getServiceSchema(`${target_service_data.heading}`)}
             />
@@ -134,7 +134,7 @@ export default function ServicesPage({ navData=[], services=[], phone_numbers=[]
           {target_service === "digitization" && <Modal close_destination="/services">
             <HelmetSEO
               title={`${target_service_data.heading} | Mirf Logistics`}
-              description="xxx"
+              description={`${target_service.body}`}
               canonical={`https://mirflogistics.com/services/${target_service}`}
               schema={getServiceSchema(`${target_service_data.heading}`)}
             />
@@ -170,7 +170,7 @@ export default function ServicesPage({ navData=[], services=[], phone_numbers=[]
           {target_service === "freight-forwarding-and-transportation" && <Modal close_destination="/services">
             <HelmetSEO
               title={`${target_service_data.heading} | Mirf Logistics`}
-              description="xxx"
+              description={`${target_service.body}`}
               canonical={`https://mirflogistics.com/services/${target_service}`}
               schema={getServiceSchema(`${target_service_data.heading}`)}
             />
@@ -205,7 +205,7 @@ export default function ServicesPage({ navData=[], services=[], phone_numbers=[]
           {target_service === "packaging-and-rebranding" && <Modal close_destination="/services">
             <HelmetSEO
               title={`${target_service_data.heading} | Mirf Logistics`}
-              description="xxx"
+              description={`${target_service.body}`}
               canonical={`https://mirflogistics.com/services/${target_service}`}
               schema={getServiceSchema(`${target_service_data.heading}`)}
             />
@@ -242,7 +242,7 @@ export default function ServicesPage({ navData=[], services=[], phone_numbers=[]
           {target_service === "warehousing-and-storage-solutions" && <Modal close_destination="/services">
             <HelmetSEO
               title={`${target_service_data.heading} | Mirf Logistics`}
-              description="xxx"
+              description={`${target_service.body}`}
               canonical={`https://mirflogistics.com/services/${target_service}`}
               schema={getServiceSchema(`${target_service_data.heading}`)}
             />

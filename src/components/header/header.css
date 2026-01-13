@@ -32,6 +32,7 @@
 #main-header .logo .logo-text {
     text-align: center;
     text-wrap: wrap;
+    font-size: 40px;
 }
 
 #menu-icon {
@@ -41,8 +42,14 @@
     transition: all 2s;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1050px) {
     #menu-icon {
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #main-header .logo .logo-text {
+        font-size: 30px;
     }
 }

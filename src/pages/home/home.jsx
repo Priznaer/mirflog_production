@@ -162,7 +162,7 @@ export default function HomePage(
                         </div>
                         <section className="md-message">
                             <div className="md-img-x-text">
-                                <img src={cargo_on_truck_2000_850} alt="xxx" width="500" height="500" className="md-img" />
+                                <img src={cargo_on_truck_2000_850} alt="Managing Director's Image" width="500" height="500" className="md-img" />
                                 <div className="md-text-container">
                                     <h2 className="section-heading"> A Word From Our MD</h2>
                                     <p className="md-text"> 
@@ -175,7 +175,7 @@ export default function HomePage(
                         <section id="brief-service">
                             <h2 className="section-heading">Our Services at a Glance</h2>
                             <div className="ic-x-slc">
-                                <img src={serviceImage} alt="xxx" width="500" height="500" className="ic" />
+                                <img src={serviceImage} alt="Service Image" width="500" height="500" className="ic" />
                                 <div className="slc">
                                     <ServiceAccordion accordion_data={services} image_setter={setServiceImage} />
                                 </div>
@@ -221,7 +221,7 @@ export default function HomePage(
                                 }}
                                 scrollbar={{ draggable: true }}
                             >
-                                {testemonials_data.map((testimonial, idx) => (
+                                {testemonials_data.map((testimonial, idx) => ( 
                                     <SwiperSlide key={idx}>
                                         <TestimonialCard testimonial={testimonial} />
                                     </SwiperSlide>

@@ -5,6 +5,7 @@
     gap: 20px;
     padding: 0 10px;
     padding-bottom: 20px;
+    margin-top: 30px;
     margin-bottom: 50px;
     overflow-x: hidden;
 }
@@ -16,6 +17,11 @@
     flex: 1;
     max-width: 900px;
     min-width: 622px;
+}
+
+#contact-page h2.section-heading {
+    padding-top: 0;
+    color: var(--secondary-color);
 }
 
 .phones-x-emails-container {
@@ -47,11 +53,13 @@
     border: 1px solid transparent;
     border-radius: 10px;
     transition: scale 300ms ease-in-out;
+    background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .info-heading {
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 .social-container .section-heading {
@@ -88,19 +96,24 @@
     max-height: max-content;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    background-color: aliceblue;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-.office-hours-section h2 {
-    padding: 0;
+.office-section-heading {
+    margin-bottom: 15px;
 }
 
-.office-hours-container {
+.office-hours-section h3.section-subheading {
+    text-align: center;
+    font-weight: 500;
+}
+
+.office-hours-container, .weekdays-container, .weekends-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -116,13 +129,8 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.office-hours-container .row.today {
-    background-color: white;
-    border: 3px solid var(--primary-color);
-}
-
 .office-hours-container .row .day {
-    min-width: 150px;
+    min-width: 220px;
 }
 
 /* Quote Section */
@@ -395,7 +403,7 @@ button:focus {
     text-align: center;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 510px) {
     .office-hours-section {
         width: 95%;
     }
@@ -404,8 +412,14 @@ button:focus {
         flex-direction: column;
         gap: 0;
         text-align: center;
-        /* justify-content: flex-start;
-        align-items: flex-start; */
+    }
+
+    .office-hours-container .row .day {
+        min-width: unset;
+    }
+
+    .office-hours-container .row.closed {
+        justify-content: space-around;
     }
 }
 

@@ -14,9 +14,13 @@
   --space-lg: clamp(2rem, 2vw, 4rem);
   
   /* --primary-color: #0AAFBF; */
-  --primary-color: #5dbac3;
+  /* --primary-color: #5dbac3; */
   /* --primary-color: rgb(103, 208, 173); */
-  --secondary-color: #FF0095;
+  /* --primary-color: #40e0d0; */
+  --primary-color: #01ADB4;
+  /* --secondary-color: #FF0095; */
+  --secondary-color: #E10D80;
+  /* --secondary-color: magenta; */
   --tertiary-color: #fff;
   --color-4: #d3def2;
 

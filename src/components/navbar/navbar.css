@@ -55,7 +55,7 @@
     left: 0;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1050px) {
     #main-nav {
         position: fixed;
         top: var(--header-height);

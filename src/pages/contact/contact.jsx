@@ -14,8 +14,7 @@ import { NotificationModal } from '../../components/modals/modals';
 import { MiniHero } from '../../components/hero/hero';
 
 
-export default function ContactPage({ navData, phone_numbers=[], emails=[], socials=[], working_hours=[] }) {
-    const today = (new Date().getDay() + 6) % 7;
+export default function ContactPage({ navData, phone_numbers=[], emails=[], socials=[]}) {
     const [notifySubmitSuccess, setNotifySubmitSuccess] = useState(false);
     const payload_ref = useRef({});
     const form_ref = useRef("");
@@ -404,27 +403,32 @@ export default function ContactPage({ navData, phone_numbers=[], emails=[], soci
                               </div>
                           </div>
                       </div>
+                      <div>
+                        <h2 className="section-heading office-section-heading">Office Hours</h2>
                         <div className="office-hours-section">
-                            <h2 className="section-heading">Office Hours</h2>
                             <div className="office-hours-container">
-                                {working_hours.map((data, idx) => {
-                                    return (
-                                        <div key={idx} className={`row${!data.opening ? " closed" : ""}${today === idx ? " today" : ""}`}>
-                                            <p className="day"> {data.day} </p>
-                                            {
-                                                data.opening ? 
-                                                <p className="hours"> 
-                                                    <span className="opening"> {data.opening} </span>
-                                                    <span className="divider"> - </span>
-                                                    <span className="closing"> {data.closing} </span>
-                                                </p> :
-                                                <p className="hours"> Closed </p>
-                                            }
-                                        </div>
-                                    )
-                                })}
+                                <div className="weekdays-container">
+                                    <h3 className="section-subheading">Weekdays</h3>
+                                    <div className="row">
+                                        <p className="day">Mondays - Fridays</p>
+                                        <p className="hours">7:00 AM - 6:00 PM</p>
+                                    </div>
+                                </div>
+                                <div className="weekends-container">
+                                    <h3 className="section-subheading">Weekends</h3>
+                                    <div className="row">
+                                        <p className="day">Saturdays</p>
+                                        <p className="hours">9:00 AM - 2:00 PM</p>
+                                    </div>
+                                    <div className="row closed">
+                                        <p className="day">Sundays</p>
+                                        <p className="hours">Closed</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                      </div>
                     </div>
                     <section id="quote-section">
                         <h2 className="section-heading">Request Free Quote</h2>

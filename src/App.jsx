@@ -15,6 +15,7 @@ import digitization_service_img from "./assets/images/scaled/digital-transformat
 import distribution_service_img from "./assets/images/scaled/shipping_container_packed_with_cargo - 1200x500.webp";
 
 
+const GalleryPage = lazy(() => import('./pages/gallery/gallery'));
 const HomePage = lazy(() => import('./pages/home/home'));
 const ServicesPage = lazy(() => import('./pages/services/services'));
 const AboutPage = lazy(() => import('./pages/about/about'));
@@ -62,6 +63,7 @@ export default function App() {
     {imgSRC: "", text:"Services", destination:"/services"},
     {imgSRC: "", text:"About Us", destination:"/about"},
     {imgSRC: "", text:"Contact Us", destination:"/contact"}, 
+    // {imgSRC: "", text:"Gallery", destination:"/gallery"}, 
     {imgSRC: "", text:"Get Free Quote", destination:"/contact#quote-section", textClasses:"nav-item-quote", containerClasses:"quote-container", linkClasses:"quote-link"}
   ];
 
@@ -146,30 +148,6 @@ export default function App() {
     }
   ];
 
-  const working_hours = [
-    {
-      day: "Monday", opening: "7:00 AM", closing: "5:00 PM"
-    },
-    {
-      day: "Tuesday", opening: "7:00 AM", closing: "5:00 PM"
-    },
-    {
-      day: "Wednesday", opening: "7:00 AM", closing: "5:00 PM"
-    },
-    {
-      day: "Thursday", opening: "7:00 AM", closing: "5:00 PM"
-    },
-    {
-      day: "Friday", opening: "7:00 AM", closing: "5:00 PM"
-    },
-    {
-      day: "Saturday", opening: null, closing: null
-    },
-    {
-      day: "Sunday", opening: null, closing: null
-    },
-  ];
-
   const clients = [
     {
       name: "xxx", 
@@ -211,11 +189,13 @@ export default function App() {
         element={<ServicesPage navData={navData} phone_numbers={phone_numbers} emails={emails} socials={socials} services={services} />} 
       />
       <Route path='/contact' 
-        element={<ContactPage navData={navData} phone_numbers={phone_numbers} emails={emails} socials={socials} 
-        working_hours={working_hours} />}
+        element={<ContactPage navData={navData} phone_numbers={phone_numbers} emails={emails} socials={socials} />}
       />
       <Route path='/about' 
         element={<AboutPage navData={navData} milestones={milestones} phone_numbers={phone_numbers} emails={emails} socials={socials} />} 
+      />
+      <Route path='/gallery' 
+        element={<GalleryPage navData={navData} phone_numbers={phone_numbers} emails={emails} socials={socials} />} 
       />
       <Route path='/not-found' 
         element={<Page404 navData={navData} phone_numbers={phone_numbers} emails={emails} socials={socials} />} 

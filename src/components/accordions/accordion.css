@@ -18,6 +18,10 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px, rgba(0, 0, 0, 0.7) 0px 1px 2px;
 }
 
+.accordion-header.open {
+    border-radius: 10px 10px 0 0;
+}
+
 .accordion-header:hover {
     transform: translateX(30px);
     .accordion-icon {
@@ -43,6 +47,10 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px, rgba(0, 0, 0, 0.7) 0px 1px 2px;
 }
 
+.accordion-body.visible {
+    border-radius: 0 0 10px 10px;
+}
+
 .accordion-body .service-description {
     padding: 5px 10px;
 }
@@ -66,3 +74,15 @@
     background-color: var(--secondary-color);
 }
 
+@media screen and (max-width: 1199px) {
+    .service-accordion {
+        max-width: calc(100% - 10px);
+    }
+}
+
+/* Only touch devices */
+@media (pointer: coarse) {
+  .accordion-header:hover {
+    transform: none;
+  }
+}

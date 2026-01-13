@@ -44,7 +44,7 @@ export function ServiceAccordion({accordion_data, image_setter}) {
         <div className="service-accordion">
             {accordion_data.map((service_data, idx) => (                
                 <div key={idx} className="accordion-item">
-                    <div className="accordion-header" onClick={() => handleAccordionToggle(idx, service_data.image_src)}>
+                    <div className={`accordion-header ${activeAccordion === idx && accordionOpen ? " open" : ""}`} onClick={() => handleAccordionToggle(idx, service_data.image_src)}>
                         {
                             activeAccordion === idx && accordionOpen ? 
                             <FontAwesomeIcon icon={faArrowDown} className="accordion-icon" /> : 

@@ -7,7 +7,7 @@ import {
 
 import './header.css'
 import Navbar from '../navbar/navbar'
-import mirf_logo from "../../assets/images/scaled/mirf-logo-compact.webp"
+import mirf_logo from "/mirf_logo - cropped_text - 500x428.webp"
 
 
 export default function Header({ navData }) {
