@@ -403,7 +403,7 @@ export default function ContactPage({ navData, phone_numbers=[], emails=[], soci
                               </div>
                           </div>
                       </div>
-                      <div>
+                      <div className='container'>
                         <h2 className="section-heading office-section-heading">Office Hours</h2>
                         <div className="office-hours-section">
                             <div className="office-hours-container">
