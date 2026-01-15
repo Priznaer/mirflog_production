@@ -91,10 +91,6 @@
 }
 
 /* Office Hours */
-.container {
-    width: 100%;
-}
-
 .office-hours-section {
     max-height: max-content;
     border-radius: 10px;
@@ -409,6 +405,10 @@ button:focus {
 }
 
 @media screen and (max-width: 510px) {
+    .container {
+        width: 100%;
+    }
+    
     .contact-group {
         margin: 0;
     }
